@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Estudio | Gestión Educacional - Juan López</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html#home">
+                <i class="fas fa-code me-2"></i>JLCH Dev
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section project-detail-hero d-flex align-items-center">
+        <div class="container">
+            <div class="text-center animate__animated animate__fadeIn">
+                <a href="../index.html#projects" class="btn btn-outline-custom mb-4">
+                    <i class="fas fa-arrow-left me-2"></i>Volver a Proyectos
+                </a>
+                <p class="hero-greeting text-celeste">Caso de Estudio</p>
+                <h1 class="hero-name project-hero-name">Gestión Educacional</h1>
+                <p class="hero-title text-celeste">Plataforma web para instituciones educativas</p>
+                <div class="project-tags justify-content-center d-flex flex-wrap">
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Thymeleaf</span>
+                    <span class="tag">Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Caso de Estudio Content -->
+    <section class="section-padding bg-white">
+        <div class="container">
+
+            <!-- 1. Descripción de la Actividad -->
+            <div class="row mb-5 animate-on-scroll">
+                <div class="col-12">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3 class="case-study-title">Descripción de la Actividad</h3>
+                        </div>
+                        <p class="case-study-text">
+                            Gestión Educacional es una aplicación web desarrollada como proyecto final
+                            del bootcamp de Java Spring Boot. Consiste en una plataforma integral para
+                            la gestión de instituciones educativas, permitiendo administrar el registro
+                            de estudiantes, la creación y organización de cursos, y el seguimiento
+                            de calificaciones. El sistema fue construido siguiendo la arquitectura MVC
+                            con Spring Boot en el backend, Thymeleaf para las vistas dinámicas y MySQL
+                            como base de datos relacional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Desafío Principal -->
+            <div class="row mb-5 animate-on-scroll">
+                <div class="col-12">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h3 class="case-study-title">Desafío Principal</h3>
+                        </div>
+                        <p class="case-study-text">
+                            El principal desafío fue diseñar una arquitectura limpia y escalable que
+                            pudiera manejar múltiples entidades relacionadas (estudiantes, cursos,
+                            calificaciones) manteniendo la separación de responsabilidades. Además,
+                            se requería implementar un sistema de control de permisos que diferenciara
+                            entre administradores y usuarios estándar, garantizando que cada rol
+                            tuviera acceso solo a las funcionalidades correspondientes. Otro reto
+                            fue mantener la integridad referencial en la base de datos mientras se
+                            ofrecía una experiencia de usuario fluida y sin errores visibles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Solución Propuesta -->
+            <div class="row mb-5 animate-on-scroll">
+                <div class="col-12">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon success">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3 class="case-study-title">Solución Propuesta</h3>
+                        </div>
+                        <p class="case-study-text">
+                            Se implementó una arquitectura en capas con una clara separación entre
+                            controladores, servicios y repositorios. Los controladores manejan las
+                            peticiones HTTP, la lógica de negocio se encapsula en servicios dedicados,
+                            y el acceso a datos se realiza mediante interfaces de Spring Data JPA.
+                            Para el frontend, se utilizaron plantillas Thymeleaf con componentes
+                            reutilizables y Bootstrap para el diseño responsivo. El control de
+                            permisos se gestionó a través de Spring Security con roles definidos
+                            (ADMIN y USER), y se implementaron validaciones tanto en el lado del
+                            servidor como del cliente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Herramientas Técnicas + 5. Aprendizajes (side by side) -->
+            <div class="row mb-5">
+                <!-- 4. Herramientas Técnicas -->
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="case-study-card h-100">
+                        <div class="case-study-header">
+                            <div class="case-study-icon info">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="case-study-title">Herramientas Técnicas</h3>
+                        </div>
+                        <div class="case-study-tech-tags">
+                            <span class="case-tech-tag"><i class="fab fa-java me-1"></i> Java 21</span>
+                            <span class="case-tech-tag"><i class="fas fa-leaf me-1"></i> Spring Boot 4</span>
+                            <span class="case-tech-tag"><i class="fas fa-database me-1"></i> MySQL</span>
+                            <span class="case-tech-tag"><i class="fas fa-eye me-1"></i> Thymeleaf</span>
+                            <span class="case-tech-tag"><i class="fab fa-bootstrap me-1"></i> Bootstrap</span>
+                            <span class="case-tech-tag"><i class="fas fa-cogs me-1"></i> Maven</span>
+                            <span class="case-tech-tag"><i class="fab fa-git-alt me-1"></i> Git</span>
+                            <span class="case-tech-tag"><i class="fas fa-shield-alt me-1"></i> Spring Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Principales Aprendizajes -->
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="case-study-card h-100">
+                        <div class="case-study-header">
+                            <div class="case-study-icon purple">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="case-study-title">Principales Aprendizajes</h3>
+                        </div>
+                        <ul class="case-study-list">
+                            <li><i class="fas fa-check-circle text-celeste me-2"></i> Aplicación del patrón MVC en un proyecto real</li>
+                            <li><i class="fas fa-check-circle text-celeste me-2"></i> Uso de Spring Data JPA para persistencia</li>
+                            <li><i class="fas fa-check-circle text-celeste me-2"></i> Validación de formularios con Bean Validation</li>
+                            <li><i class="fas fa-check-circle text-celeste me-2"></i> Manejo centralizado de excepciones</li>
+                            <li><i class="fas fa-check-circle text-celeste me-2"></i> Implementación de roles con Spring Security</li>
+                            <li><i class="fas fa-check-circle text-celeste me-2"></i> Diseño de esquema relacional en MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Métricas de Impacto -->
+            <div class="row mb-5 animate-on-scroll">
+                <div class="col-12">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <div class="case-study-icon primary">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="case-study-title">Métricas de Impacto</h3>
+                        </div>
+                        <div class="row text-center mt-4">
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="case-stat">
+                                    <span class="case-stat-number">15+</span>
+                                    <span class="case-stat-label">Endpoints REST</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="case-stat">
+                                    <span class="case-stat-number">&lt;200ms</span>
+                                    <span class="case-stat-label">Tiempo de Respuesta</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="case-stat">
+                                    <span class="case-stat-number">100%</span>
+                                    <span class="case-stat-label">Cobertura CRUD</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-6 mb-3">
+                                <div class="case-stat">
+                                    <span class="case-stat-number">3</span>
+                                    <span class="case-stat-label">Entidades Principales</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7. Habilidades Técnicas + 8. Justificación (side by side) -->
+            <div class="row mb-5">
+                <!-- 7. Habilidades Técnicas -->
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="case-study-card h-100">
+                        <div class="case-study-header">
+                            <div class="case-study-icon info">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="case-study-title">Habilidades Técnicas Aplicadas</h3>
+                        </div>
+                        <div class="case-study-tech-tags">
+                            <span class="case-tech-tag">Java</span>
+                            <span class="case-tech-tag">Spring Boot</span>
+                            <span class="case-tech-tag">Spring MVC</span>
+                            <span class="case-tech-tag">Spring Data JPA</span>
+                            <span class="case-tech-tag">Spring Security</span>
+                            <span class="case-tech-tag">MySQL</span>
+                            <span class="case-tech-tag">Thymeleaf</span>
+                            <span class="case-tech-tag">Bootstrap</span>
+                            <span class="case-tech-tag">REST API</span>
+                            <span class="case-tech-tag">MVC</span>
+                            <span class="case-tech-tag">Git</span>
+                            <span class="case-tech-tag">Maven</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Justificación -->
+                <div class="col-lg-6 mb-4 animate-on-scroll">
+                    <div class="case-study-card h-100">
+                        <div class="case-study-header">
+                            <div class="case-study-icon warning">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="case-study-title">¿Por Qué Este Proyecto?</h3>
+                        </div>
+                        <p class="case-study-text">
+                            Elegí Gestión Educacional para mi portafolio porque representa mi
+                            primer proyecto completo y funcional durante el bootcamp. Es el
+                            proyecto que mejor demuestra mi capacidad de construir una aplicación
+                            full stack desde cero, aplicando todos los conceptos aprendidos:
+                            arquitectura MVC, patrones de diseño, persistencia de datos y
+                            seguridad. Además, resuelve un problema real y tangible — la gestión
+                            de información educativa — lo que lo hace fácil de entender para
+                            cualquier evaluador o reclutador. Este proyecto marcó el punto de
+                            inflexión en mi formación como desarrollador backend.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones Volver -->
+            <div class="text-center mt-5 animate-on-scroll">
+                <a href="gestion-educacional.html" class="btn btn-primary-custom me-3">
+                    <i class="fas fa-arrow-left me-2"></i>Volver al Proyecto
+                </a>
+                <a href="../index.html#projects" class="btn btn-outline-custom">
+                    <i class="fas fa-th-large me-2"></i>Ver Todos los Proyectos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        <i class="fas fa-code me-2"></i>&copy; 2026 Juan López. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        Hecho con <i class="fas fa-heart text-celeste"></i> | Java Spring Bootcamp
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
